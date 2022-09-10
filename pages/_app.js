@@ -6,8 +6,8 @@ import { ModalProvider } from 'react-simple-hook-modal'
 function MyApp({ Component, pageProps }) {
   return (
     <MoralisProvider
-      serverUrl={process.env.NEXT_PUBLIC_MORALIS_SERVER}
-      appId={process.env.NEXT_PUBLIC_MORALIS_APP_ID}
+      serverUrl="https://yq5se8dql0t3.usemoralis.com:2053/server"
+      appId="Cx3md1qXvWufmFfGUclwJ5SYtxSaAjPUxr5BnQEn"
     >
       <AmazonProvider>
         <ModalProvider>

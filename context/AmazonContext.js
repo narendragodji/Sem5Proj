@@ -209,8 +209,8 @@ export const AmazonProvider = ({ children }) => {
 
   const getOwnedAssets = async () => {
     try {
-      // let query = new Moralis.Query('_User')
-      // let results = await query.find()
+      let query = new Moralis.Query('_User')
+      let results = await query.find()
 
       if (userData[0]) {
         setOwnedItems(prevItems => [

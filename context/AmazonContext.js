@@ -188,8 +188,8 @@ export const AmazonProvider = ({ children }) => {
   const getAssets = async () => {
     try {
       await enableWeb3()
-      // const query = new Moralis.Query('Assets')
-      // const results = await query.find()
+      const query = new Moralis.Query('assets')
+      const results = await query.find()
 
       setAssets(assetsData)
     } catch (error) {
